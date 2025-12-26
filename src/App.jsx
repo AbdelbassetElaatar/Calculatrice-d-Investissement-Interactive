@@ -1,6 +1,6 @@
-import "./App.css";
-import logo from "./assets/investment-calculator-logo.png";
-import Form from "./Components/Form/Form.jsx";
+import { } from 'react'
+import './App.css'
+
 function App() {
     return (
       <div>
@@ -13,4 +13,4 @@ function App() {
     );
   }
 
-export default App;
+export default App

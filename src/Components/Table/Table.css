@@ -1,0 +1,27 @@
+.headertext{
+  justify-content: center;
+  text-align: center;
+  text-decoration: solid;
+  font-size: medium;
+  background-color: (#303b37 → #1a1f1d);
+  margin: 3rem auto;
+  object-fit: contain
+  color;
+}
+.tb{
+  display: flex;
+  font-size: 20px;
+  font-style: normal;
+  background-color:(#303b37 → #1a1f1d);
+  box-sizing: border-box;
+  font-family:Quicksand;
+  border: #1a1f1d;
+  border-style: solid;
+}
+.txt{
+  text-align: center;
+  font-size: medium;
+  font-weight: 100px;
+  font-style: normal;
+  
+}
