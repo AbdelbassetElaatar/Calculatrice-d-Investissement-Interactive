@@ -1,0 +1,99 @@
+function Table( {}
+
+return (
+<table class="tb">
+      <tr>
+        <th classe="headertext">Year</th>
+        <th class="headertextt">Total Savings</th>
+        <th class="headertextt">Interest(Year)</th>
+        <th classe="headertext">Total Interest</th>
+        <th classe="headertext">Invested Capital</th>
+      </tr>
+
+      <tr>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+      </tr>
+      <tr>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+      </tr>
+      <tr>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+      </tr>
+      <tr>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+       
+      </tr>
+      <tr>
+        <td class="txt"></td>
+        <td class="txt"></td><td></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        
+      </tr>
+      <tr>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+      </tr>
+      <tr>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+      </tr>
+      <tr>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+        <td class="txt"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+
+function calculate()
+var CurrentSaving;
+var Tauxderendement;
+YearlyContribution;
+function yearlyInterest() {
+ 
+    return CurrentSaving * Tauxderendement;
+}
+function SavingEndofYear() {
+  return CurrentSaving+yearlyInterest+YearlyContribution
+  
+}
+function currentSaving() {
+
+}
+
+));
