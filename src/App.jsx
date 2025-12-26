@@ -1,16 +1,16 @@
-import { useState } from "react";
-import "./App.css";
+import Form from './Components/Form/Form';
 
-import logo from "./assets/investment-calculator-logo.png";
+
+function App() {
+ 
 
 function App() {
   return (
-    <>
-      <nav>
-        <img src={logo} className="nav-img" />
-        <h1>Investment Calculator</h1>
-      </nav>
-    </>
+    <div>
+
+      <Form/>
+    
+    </div>
   );
 }
 
