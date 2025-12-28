@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import Form from './Components/Form/Form';
 import Table from './Components/Table/Table';
-
+import logo from "./assets/investment-calculator-logo.png";
+import './App.css';
 function App() {
   const [userInput, setUserInput] = useState(null);
 
@@ -35,10 +36,19 @@ function App() {
 
   return (
     <div>
+      <nav>
+        <img src={logo} className="nav-img" />
+        <h1>Investment Calculator</h1>
+      </nav>
       <Form onCalculate={calculateHandler} onReset={resetHandler} />
 
-      {!userInput && <p style={{textAlign: 'center'}}>No Data available.</p>}
-      {userInput && <Table data={yearlyData} initialInvestment={userInput['current-savings']} />}
+      {!userInput && <p style={{ textAlign: "center" }}>No Data available.</p>}
+      {userInput && (
+        <Table
+          data={yearlyData}
+          initialInvestment={userInput["current-savings"]}
+        />
+      )}
     </div>
   );
 }

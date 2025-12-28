@@ -1,10 +1,19 @@
 .form{
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 6px;
+    width:700px;
+  left: 50%;
+  right: 50%;
+  margin-left: auto;
+    margin-right: auto;
     font-family: 'Roboto Condensed', 'sans-serif';
     font-weight: bold;
     text-transform:uppercase;
-    
+      max-width: 800px;
+
   display: grid;
- grid-template-columns: auto auto;
+ grid-template-columns: 1fr 1fr;
  gap: 0.5rem;
     background: linear-gradient(180deg, #2f7f6c, #2b986d);
 }
@@ -12,7 +21,7 @@ label{
 font-size: 12px;
 padding-bottom: 2%;
 }
-.form div{
+.form .column{
     
     margin-left: 1rem;
   text-align: left;
@@ -29,9 +38,11 @@ padding-bottom: 2%;
   padding-left: 3%;
   
 }
-.form button{
-  grid-column: 1 / span 2;
+input:focus {
+  outline: none;
+  border-color: #fff;
 }
+
 .button-row {
    grid-column: 1 / span 2;    
   display: flex;
@@ -40,16 +51,36 @@ padding-bottom: 2%;
   gap: 1rem;                
   align-items: center;
 }
-.button,.buttonAlt{
-    width: 140px;
-    height: 45px;
-    border: none;
-    border-radius: 6px;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    background-color: #1b5145;
+
+.buttonAlt {
+  background: transparent;
+  border: none;
+  color: #c2dbd6;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.buttonAlt:hover {
+  color: #fff;
+}
+
+.button {
+  width: 140px;
+  height: 45px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #1b3d35; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  background-color: #152e28;
 }
 
 
