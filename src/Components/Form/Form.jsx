@@ -71,7 +71,7 @@ function Form(props) {
             id="duration"
           />
         </div>
-      <div>
+      <div className="button-row">
         <button type="button" className="buttonAlt" onClick={resetHandler}>
           Reset
         </button>

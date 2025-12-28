@@ -1,83 +1,56 @@
-
-/* Carte verte interne */
-.form {
-  padding: 2.5rem;
-  border-radius: 8px;
-  background: #2e8b6b;
-}
-
-/* Grille 2 colonnes */
-#current-savings{
+.form{
+    font-family: 'Roboto Condensed', 'sans-serif';
+    font-weight: bold;
+    text-transform:uppercase;
+    
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem 3rem;
+ grid-template-columns: auto auto;
+ gap: 0.5rem;
+    background: linear-gradient(180deg, #2f7f6c, #2b986d);
 }
-
-#current-savings > div {
+label{
+font-size: 12px;
+padding-bottom: 2%;
+}
+.form div{
+    
+    margin-left: 1rem;
+  text-align: left;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
 }
-
-/* Labels */
-.form label {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 0.7rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #d1fae5;
-  margin-bottom: 0.3rem;
-}
-
-/* Inputs */
-.form input {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  border: 2px solid rgba(255, 255, 255, 0.35);
+.form input{
+  margin-bottom: 1rem;
+  height: 45px;
+  background-color: transparent;
+  border: 1px solid #fff;
   border-radius: 6px;
-  background: transparent;
-  color: #ecfdf5;
-  font-size: 1.1rem;
+  color: white;
+  padding-left: 3%;
+  
 }
-
-.form input:focus {
-  outline: none;
-  border-color: #b7f7e2;
+.form button{
+  grid-column: 1 / span 2;
 }
-
-/* Boutons */
-.actions {
+.button-row {
+   grid-column: 1 / span 2;    
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: center;  
+  gap: 1rem;                
   align-items: center;
-  gap: 2.5rem;
-  margin-top: 3.5rem;
+}
+.button,.buttonAlt{
+    width: 140px;
+    height: 45px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #1b5145;
 }
 
-.button {
-  padding: 0.6rem 1.8rem;
-  border-radius: 6px;
-  background: #0f3d2e;
-  color: #ecfdf5;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-}
 
-.button:hover {
-  background: #145c44;
-}
 
-.buttonAlt {
-  background: none;
-  border: none;
-  color: #d1fae5;
-  cursor: pointer;
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-  .input-group {
-    grid-template-columns: 1fr;
-  }
-}
