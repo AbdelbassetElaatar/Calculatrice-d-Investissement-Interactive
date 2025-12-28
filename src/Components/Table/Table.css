@@ -7,8 +7,9 @@
   border-collapse: collapse;
   background-color: #3b4a47;
     background-image: linear-gradient(90deg, #303b37, #1a1f1d);
-  border-radius: 0;
   overflow: hidden;
+    border-radius: 6px;
+
 }
 
 .result thead {
