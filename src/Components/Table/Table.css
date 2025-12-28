@@ -1,27 +1,72 @@
-.headertext{
-  justify-content: center;
-  text-align: center;
-  text-decoration: solid;
-  font-size: medium;
-  background-color: (#303b37 → #1a1f1d);
-  margin: 3rem auto;
-  object-fit: contain
-  color;
+.result {
+  max-width: 50rem;
+  margin: 2rem auto;
+  padding: 0;
+  table-layout: fixed;
+  border-spacing: 0;
+  border-collapse: collapse;
+  background-color: #3b4a47;
+    background-image: linear-gradient(90deg, #303b37, #1a1f1d);
+  border-radius: 0;
+  overflow: hidden;
 }
-.tb{
-  display: flex;
-  font-size: 20px;
-  font-style: normal;
-  background-color:(#303b37 → #1a1f1d);
-  box-sizing: border-box;
-  font-family:Quicksand;
-  border: #1a1f1d;
-  border-style: solid;
+
+.result thead {
+  background-color: #3b4a47;
+      background-image: linear-gradient(90deg, #303b37, #1a1f1d);
 }
-.txt{
+
+.result th {
+  color: #6ee7b7;
+  font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
-  font-size: medium;
-  font-weight: 100px;
-  font-style: normal;
+  padding: 1.5rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-bottom: none;
+}
+
+.result tbody tr {
+
+      background-image: linear-gradient(90deg, #303b37, #1a1f1d);
+}
+
+.result tbody tr:hover {
+  background-color: #435550;
+}
+
+.result td {
+  padding: 1.2rem 1rem;
+  color: #a5d6ca;
+  font-size: 1.15rem;
+  text-align: center;
+  border-bottom: none;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+
+/* Colonne Year */
+.result td:first-child {
+  color: #6ee7b7;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .result {
+    max-width: 95%;
+    margin: 1rem auto;
+  }
   
+  .result th,
+  .result td {
+    padding: 0.8rem 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .result td:first-child {
+    font-size: 1rem;
+  }
 }

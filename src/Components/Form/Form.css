@@ -1,0 +1,83 @@
+
+/* Carte verte interne */
+.form {
+  padding: 2.5rem;
+  border-radius: 8px;
+  background: #2e8b6b;
+}
+
+/* Grille 2 colonnes */
+#current-savings{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 3rem;
+}
+
+#current-savings > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Labels */
+.form label {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #d1fae5;
+  margin-bottom: 0.3rem;
+}
+
+/* Inputs */
+.form input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 6px;
+  background: transparent;
+  color: #ecfdf5;
+  font-size: 1.1rem;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: #b7f7e2;
+}
+
+/* Boutons */
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 3.5rem;
+}
+
+.button {
+  padding: 0.6rem 1.8rem;
+  border-radius: 6px;
+  background: #0f3d2e;
+  color: #ecfdf5;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #145c44;
+}
+
+.buttonAlt {
+  background: none;
+  border: none;
+  color: #d1fae5;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .input-group {
+    grid-template-columns: 1fr;
+  }
+}

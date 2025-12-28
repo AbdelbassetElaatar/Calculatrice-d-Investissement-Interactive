@@ -1,25 +1,22 @@
-
-
 import React from 'react';
 import './Table.css';
 
 const formatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: 'USD',
-  minimumFractionDigits: 2,
-  maximumFractionDigits: 2,
+         
 });
 
 function Table(props) {
   return (
-    <table className="tb">
+    <table className="result">  
       <thead>
         <tr>
-          <th class=".headertext" >Year</th>
-          <th class=".headertext">Total Savings</th>
-          <th class=".headertext">Interest (Year)</th>
-          <th class=".headertext">Total Interest</th>
-          <th class=".headertext">Invested Capital</th>
+          <th >Year</th>
+          <th >Total Savings</th>
+          <th >Interest (Year)</th>
+          <th >Total Interest</th>
+          <th>Invested Capital</th>
         </tr>
       </thead>
       <tbody>
@@ -48,32 +45,3 @@ function Table(props) {
 }
 
 export default Table;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
